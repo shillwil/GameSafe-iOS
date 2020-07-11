@@ -14,15 +14,15 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
-        // Called when the extension is about to move from the inactive to active state.
-        // This will happen when the extension is about to present UI.
+        super.willBecomeActive(with: conversation)
         
-        // Use this method to configure the extension and restore previously stored state.
+        presentViewController(for: conversation, with: presentationStyle)
     }
     
     override func didResignActive(with conversation: MSConversation) {
@@ -53,15 +53,103 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        // Called before the extension transitions to a new presentation style.
-    
-        // Use this method to prepare for the change in presentation style.
+        super.willTransition(to: presentationStyle)
+        
+        removeAllChildViewControllers()
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        // Called after the extension transitions to a new presentation style.
-    
-        // Use this method to finalize any behaviors associated with the change in presentation style.
+        super.didTransition(to: presentationStyle)
+        
+        guard let conversation = activeConversation else { fatalError("Expected an active conversation.") }
+        
+        if conversation.localParticipantIdentifier == conversation.selectedMessage?.senderParticipantIdentifier {
+            presentViewController(for: conversation, with: presentationStyle)
+        }
     }
+    
+    /// - Tag: Add ability to actually display message from
+    private func presentViewController(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
+        removeAllChildViewControllers()
+        
+        let controller = instantiateDecoyViewController()
+        
+        
+        if presentationStyle == .expanded {
+            addChild(controller)
+            controller.view.frame = view.bounds
+            controller.view.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(controller.view)
+            
+            NSLayoutConstraint.activate([
+                controller.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+                controller.view.rightAnchor.constraint(equalTo: view.rightAnchor),
+                controller.view.topAnchor.constraint(equalTo: view.topAnchor),
+                controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
+            
+            controller.didMove(toParent: self)
+        } else {
+            addChild(controller)
+            controller.view.frame = view.bounds
+            controller.view.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(controller.view)
+            
+            NSLayoutConstraint.activate([
+                controller.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+                controller.view.rightAnchor.constraint(equalTo: view.rightAnchor),
+                controller.view.topAnchor.constraint(equalTo: view.topAnchor),
+                controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
+            
+            controller.didMove(toParent: self)
+        }
+    }
+    
+    private func instantiateDecoyViewController() -> UIViewController {
+        let controller = DecoyViewController()
+//        addChild(controller)
+        
+        controller.view.frame = self.view.bounds
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        let image = UIImage(named: "GamePlayWaiting")!
+        
+        let imageView = UIImageView(image: image) as UIView
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        controller.view.addSubview(imageView)
+        
+        let aspectRatioConstraint = NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: imageView, attribute: .width, multiplier: (1.0 / 1.0), constant: 0)
+        imageView.addConstraint(aspectRatioConstraint)
+        
+        NSLayoutConstraint.activate([
+            imageView.leftAnchor.constraint(equalTo: controller.view.leftAnchor),
+            imageView.rightAnchor.constraint(equalTo: controller.view.rightAnchor),
+            imageView.centerXAnchor.constraint(equalTo: controller.view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: controller.view.centerYAnchor),
+            aspectRatioConstraint
+        ])
 
+        
+        return controller
+    }
+    
+    private func removeAllChildViewControllers() {
+        for child in children {
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
+    
+    fileprivate func composeMessage() -> MSMessage {
+        let layout = MSMessageTemplateLayout()
+        layout.image = UIImage(named: "GameSafe-Logo")!
+        layout.caption = "GameSafe Play Invite"
+        
+        let message = MSMessage(session: MSSession())
+        message.layout = layout
+        
+        return message
+    }
 }

@@ -33,6 +33,7 @@
 		A261D03624B9490E009A59D5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A261D03424B9490E009A59D5 /* MainInterface.storyboard */; };
 		A261D03824B9490F009A59D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A261D03724B9490F009A59D5 /* Assets.xcassets */; };
 		A261D03C24B9490F009A59D5 /* GameSafe-iMessage-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04124B94ADE009A59D5 /* DecoyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		A261D03524B9490E009A59D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A261D03724B9490F009A59D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A261D03924B9490F009A59D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A261D04124B94ADE009A59D5 /* DecoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 				A261D03424B9490E009A59D5 /* MainInterface.storyboard */,
 				A261D03724B9490F009A59D5 /* Assets.xcassets */,
 				A261D03924B9490F009A59D5 /* Info.plist */,
+				A261D04124B94ADE009A59D5 /* DecoyViewController.swift */,
 			);
 			path = "GameSafe-iMessage-Extension";
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A261D03324B9490E009A59D5 /* MessagesViewController.swift in Sources */,
+				A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
