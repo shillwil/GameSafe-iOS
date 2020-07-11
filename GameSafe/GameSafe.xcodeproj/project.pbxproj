@@ -16,6 +16,18 @@
 		A261D00224B94360009A59D5 /* QuickStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00124B94360009A59D5 /* QuickStartButton.swift */; };
 		A261D00424B94464009A59D5 /* MessagesComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00324B94464009A59D5 /* MessagesComposeView.swift */; };
 		A261D00624B9449F009A59D5 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00524B9449F009A59D5 /* Library.swift */; };
+		A261D00A24B94512009A59D5 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00924B94512009A59D5 /* CircleImage.swift */; };
+		A261D00C24B94533009A59D5 /* CoverPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00B24B94533009A59D5 /* CoverPhoto.swift */; };
+		A261D00E24B94551009A59D5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00D24B94551009A59D5 /* Home.swift */; };
+		A261D01024B945A5009A59D5 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D00F24B945A5009A59D5 /* GameCell.swift */; };
+		A261D01524B9463C009A59D5 /* SettingsOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01424B9463C009A59D5 /* SettingsOptionRow.swift */; };
+		A261D01724B9467E009A59D5 /* EmbeddedContactPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01624B9467E009A59D5 /* EmbeddedContactPickerViewController.swift */; };
+		A261D01924B94698009A59D5 /* EmbeddedContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01824B94698009A59D5 /* EmbeddedContactPicker.swift */; };
+		A261D01B24B946BA009A59D5 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01A24B946BA009A59D5 /* Contact.swift */; };
+		A261D01E24B94741009A59D5 /* AssignMainContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01D24B94741009A59D5 /* AssignMainContactView.swift */; };
+		A261D02024B94758009A59D5 /* AssignBackupContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01F24B94758009A59D5 /* AssignBackupContactsView.swift */; };
+		A261D02224B94772009A59D5 /* BackupContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D02124B94772009A59D5 /* BackupContactRow.swift */; };
+		A261D02524B947B4009A59D5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D02424B947B4009A59D5 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +42,18 @@
 		A261D00124B94360009A59D5 /* QuickStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartButton.swift; sourceTree = "<group>"; };
 		A261D00324B94464009A59D5 /* MessagesComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesComposeView.swift; sourceTree = "<group>"; };
 		A261D00524B9449F009A59D5 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		A261D00924B94512009A59D5 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A261D00B24B94533009A59D5 /* CoverPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverPhoto.swift; sourceTree = "<group>"; };
+		A261D00D24B94551009A59D5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A261D00F24B945A5009A59D5 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		A261D01424B9463C009A59D5 /* SettingsOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionRow.swift; sourceTree = "<group>"; };
+		A261D01624B9467E009A59D5 /* EmbeddedContactPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedContactPickerViewController.swift; sourceTree = "<group>"; };
+		A261D01824B94698009A59D5 /* EmbeddedContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedContactPicker.swift; sourceTree = "<group>"; };
+		A261D01A24B946BA009A59D5 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		A261D01D24B94741009A59D5 /* AssignMainContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignMainContactView.swift; sourceTree = "<group>"; };
+		A261D01F24B94758009A59D5 /* AssignBackupContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignBackupContactsView.swift; sourceTree = "<group>"; };
+		A261D02124B94772009A59D5 /* BackupContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupContactRow.swift; sourceTree = "<group>"; };
+		A261D02424B947B4009A59D5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +86,8 @@
 		A261CFEA24B942D3009A59D5 /* GameSafe */ = {
 			isa = PBXGroup;
 			children = (
+				A261D01C24B946C5009A59D5 /* Models */,
+				A261D02824B947FD009A59D5 /* Views */,
 				A261CFEB24B942D3009A59D5 /* AppDelegate.swift */,
 				A261CFED24B942D3009A59D5 /* SceneDelegate.swift */,
 				A261CFEF24B942D3009A59D5 /* ContentView.swift */,
@@ -69,7 +95,7 @@
 				A261CFF624B942D3009A59D5 /* LaunchScreen.storyboard */,
 				A261CFF924B942D3009A59D5 /* Info.plist */,
 				A261CFF324B942D3009A59D5 /* Preview Content */,
-				A261D00724B944AD009A59D5 /* Library */,
+				A261D01324B945C7009A59D5 /* SupportingViews */,
 			);
 			path = GameSafe;
 			sourceTree = "<group>";
@@ -98,6 +124,80 @@
 				A261D00324B94464009A59D5 /* MessagesComposeView.swift */,
 			);
 			path = LibrarySubViews;
+			sourceTree = "<group>";
+		};
+		A261D01124B945B5009A59D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A261D01224B945BE009A59D5 /* HomeSubViews */,
+				A261D00D24B94551009A59D5 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A261D01224B945BE009A59D5 /* HomeSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A261D00924B94512009A59D5 /* CircleImage.swift */,
+				A261D00B24B94533009A59D5 /* CoverPhoto.swift */,
+			);
+			path = HomeSubViews;
+			sourceTree = "<group>";
+		};
+		A261D01324B945C7009A59D5 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				A261D00F24B945A5009A59D5 /* GameCell.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		A261D01C24B946C5009A59D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A261D01A24B946BA009A59D5 /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A261D02324B9479B009A59D5 /* ContactViews */ = {
+			isa = PBXGroup;
+			children = (
+				A261D01624B9467E009A59D5 /* EmbeddedContactPickerViewController.swift */,
+				A261D01824B94698009A59D5 /* EmbeddedContactPicker.swift */,
+				A261D01D24B94741009A59D5 /* AssignMainContactView.swift */,
+				A261D01F24B94758009A59D5 /* AssignBackupContactsView.swift */,
+				A261D02124B94772009A59D5 /* BackupContactRow.swift */,
+			);
+			path = ContactViews;
+			sourceTree = "<group>";
+		};
+		A261D02624B947C1009A59D5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A261D02424B947B4009A59D5 /* Settings.swift */,
+				A261D02724B947C8009A59D5 /* SettingsSubViews */,
+				A261D02324B9479B009A59D5 /* ContactViews */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A261D02724B947C8009A59D5 /* SettingsSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A261D01424B9463C009A59D5 /* SettingsOptionRow.swift */,
+			);
+			path = SettingsSubViews;
+			sourceTree = "<group>";
+		};
+		A261D02824B947FD009A59D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A261D00724B944AD009A59D5 /* Library */,
+				A261D01124B945B5009A59D5 /* Home */,
+				A261D02624B947C1009A59D5 /* Settings */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +274,21 @@
 				A261D00224B94360009A59D5 /* QuickStartButton.swift in Sources */,
 				A261D00424B94464009A59D5 /* MessagesComposeView.swift in Sources */,
 				A261CFEC24B942D3009A59D5 /* AppDelegate.swift in Sources */,
+				A261D00A24B94512009A59D5 /* CircleImage.swift in Sources */,
+				A261D00E24B94551009A59D5 /* Home.swift in Sources */,
+				A261D01524B9463C009A59D5 /* SettingsOptionRow.swift in Sources */,
+				A261D02524B947B4009A59D5 /* Settings.swift in Sources */,
+				A261D01B24B946BA009A59D5 /* Contact.swift in Sources */,
+				A261D01924B94698009A59D5 /* EmbeddedContactPicker.swift in Sources */,
+				A261D01024B945A5009A59D5 /* GameCell.swift in Sources */,
+				A261D00C24B94533009A59D5 /* CoverPhoto.swift in Sources */,
 				A261CFEE24B942D3009A59D5 /* SceneDelegate.swift in Sources */,
+				A261D02224B94772009A59D5 /* BackupContactRow.swift in Sources */,
 				A261CFF024B942D3009A59D5 /* ContentView.swift in Sources */,
 				A261D00624B9449F009A59D5 /* Library.swift in Sources */,
+				A261D01724B9467E009A59D5 /* EmbeddedContactPickerViewController.swift in Sources */,
+				A261D02024B94758009A59D5 /* AssignBackupContactsView.swift in Sources */,
+				A261D01E24B94741009A59D5 /* AssignMainContactView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
