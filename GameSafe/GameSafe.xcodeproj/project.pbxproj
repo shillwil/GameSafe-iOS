@@ -28,7 +28,36 @@
 		A261D02024B94758009A59D5 /* AssignBackupContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D01F24B94758009A59D5 /* AssignBackupContactsView.swift */; };
 		A261D02224B94772009A59D5 /* BackupContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D02124B94772009A59D5 /* BackupContactRow.swift */; };
 		A261D02524B947B4009A59D5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D02424B947B4009A59D5 /* Settings.swift */; };
+		A261D03024B9490E009A59D5 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A261D02F24B9490E009A59D5 /* Messages.framework */; };
+		A261D03324B9490E009A59D5 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D03224B9490E009A59D5 /* MessagesViewController.swift */; };
+		A261D03624B9490E009A59D5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A261D03424B9490E009A59D5 /* MainInterface.storyboard */; };
+		A261D03824B9490F009A59D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A261D03724B9490F009A59D5 /* Assets.xcassets */; };
+		A261D03C24B9490F009A59D5 /* GameSafe-iMessage-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A261D03A24B9490F009A59D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A261CFE024B942D3009A59D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A261D02C24B9490E009A59D5;
+			remoteInfo = "GameSafe-iMessage-Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A261D04024B9490F009A59D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A261D03C24B9490F009A59D5 /* GameSafe-iMessage-Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A261CFE824B942D3009A59D5 /* GameSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +83,12 @@
 		A261D01F24B94758009A59D5 /* AssignBackupContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignBackupContactsView.swift; sourceTree = "<group>"; };
 		A261D02124B94772009A59D5 /* BackupContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupContactRow.swift; sourceTree = "<group>"; };
 		A261D02424B947B4009A59D5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GameSafe-iMessage-Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A261D02F24B9490E009A59D5 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		A261D03224B9490E009A59D5 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		A261D03524B9490E009A59D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A261D03724B9490F009A59D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A261D03924B9490F009A59D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +99,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A261D02A24B9490E009A59D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261D03024B9490E009A59D5 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				A261CFEA24B942D3009A59D5 /* GameSafe */,
+				A261D03124B9490E009A59D5 /* GameSafe-iMessage-Extension */,
+				A261D02E24B9490E009A59D5 /* Frameworks */,
 				A261CFE924B942D3009A59D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A261CFE824B942D3009A59D5 /* GameSafe.app */,
+				A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +141,6 @@
 				A261CFF624B942D3009A59D5 /* LaunchScreen.storyboard */,
 				A261CFF924B942D3009A59D5 /* Info.plist */,
 				A261CFF324B942D3009A59D5 /* Preview Content */,
-				A261D01324B945C7009A59D5 /* SupportingViews */,
 			);
 			path = GameSafe;
 			sourceTree = "<group>";
@@ -196,8 +241,28 @@
 				A261D00724B944AD009A59D5 /* Library */,
 				A261D01124B945B5009A59D5 /* Home */,
 				A261D02624B947C1009A59D5 /* Settings */,
+				A261D01324B945C7009A59D5 /* SupportingViews */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A261D02E24B9490E009A59D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A261D02F24B9490E009A59D5 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A261D03124B9490E009A59D5 /* GameSafe-iMessage-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A261D03224B9490E009A59D5 /* MessagesViewController.swift */,
+				A261D03424B9490E009A59D5 /* MainInterface.storyboard */,
+				A261D03724B9490F009A59D5 /* Assets.xcassets */,
+				A261D03924B9490F009A59D5 /* Info.plist */,
+			);
+			path = "GameSafe-iMessage-Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,15 +275,34 @@
 				A261CFE424B942D3009A59D5 /* Sources */,
 				A261CFE524B942D3009A59D5 /* Frameworks */,
 				A261CFE624B942D3009A59D5 /* Resources */,
+				A261D04024B9490F009A59D5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A261D03B24B9490F009A59D5 /* PBXTargetDependency */,
 			);
 			name = GameSafe;
 			productName = GameSafe;
 			productReference = A261CFE824B942D3009A59D5 /* GameSafe.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A261D02C24B9490E009A59D5 /* GameSafe-iMessage-Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A261D03D24B9490F009A59D5 /* Build configuration list for PBXNativeTarget "GameSafe-iMessage-Extension" */;
+			buildPhases = (
+				A261D02924B9490E009A59D5 /* Sources */,
+				A261D02A24B9490E009A59D5 /* Frameworks */,
+				A261D02B24B9490E009A59D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GameSafe-iMessage-Extension";
+			productName = "GameSafe-iMessage-Extension";
+			productReference = A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
@@ -231,6 +315,9 @@
 				ORGANIZATIONNAME = Shillwil;
 				TargetAttributes = {
 					A261CFE724B942D3009A59D5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A261D02C24B9490E009A59D5 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -249,6 +336,7 @@
 			projectRoot = "";
 			targets = (
 				A261CFE724B942D3009A59D5 /* GameSafe */,
+				A261D02C24B9490E009A59D5 /* GameSafe-iMessage-Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +349,15 @@
 				A261CFF824B942D3009A59D5 /* LaunchScreen.storyboard in Resources */,
 				A261CFF524B942D3009A59D5 /* Preview Assets.xcassets in Resources */,
 				A261CFF224B942D3009A59D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261D02B24B9490E009A59D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261D03824B9490F009A59D5 /* Assets.xcassets in Resources */,
+				A261D03624B9490E009A59D5 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +389,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A261D02924B9490E009A59D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261D03324B9490E009A59D5 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A261D03B24B9490F009A59D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A261D02C24B9490E009A59D5 /* GameSafe-iMessage-Extension */;
+			targetProxy = A261D03A24B9490F009A59D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A261CFF624B942D3009A59D5 /* LaunchScreen.storyboard */ = {
@@ -301,6 +414,14 @@
 				A261CFF724B942D3009A59D5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A261D03424B9490E009A59D5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A261D03524B9490E009A59D5 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -423,6 +544,7 @@
 		A261CFFD24B942D3009A59D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GameSafe/Preview Content\"";
@@ -443,6 +565,7 @@
 		A261CFFE24B942D3009A59D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GameSafe/Preview Content\"";
@@ -455,6 +578,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manmademillenial.GameSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A261D03E24B9490F009A59D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "GameSafe-iMessage-Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manmademillenial.GameSafe.GameSafe-iMessage-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A261D03F24B9490F009A59D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "GameSafe-iMessage-Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manmademillenial.GameSafe.GameSafe-iMessage-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,6 +640,15 @@
 			buildConfigurations = (
 				A261CFFD24B942D3009A59D5 /* Debug */,
 				A261CFFE24B942D3009A59D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A261D03D24B9490F009A59D5 /* Build configuration list for PBXNativeTarget "GameSafe-iMessage-Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A261D03E24B9490F009A59D5 /* Debug */,
+				A261D03F24B9490F009A59D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
