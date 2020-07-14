@@ -34,6 +34,7 @@
 		A261D03824B9490F009A59D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A261D03724B9490F009A59D5 /* Assets.xcassets */; };
 		A261D03C24B9490F009A59D5 /* GameSafe-iMessage-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04124B94ADE009A59D5 /* DecoyViewController.swift */; };
+		A261D04424BE1934009A59D5 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04324BE1934009A59D5 /* Difficulty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		A261D03724B9490F009A59D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A261D03924B9490F009A59D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A261D04124B94ADE009A59D5 /* DecoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyViewController.swift; sourceTree = "<group>"; };
+		A261D04324BE1934009A59D5 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A261D01A24B946BA009A59D5 /* Contact.swift */,
+				A261D04324BE1934009A59D5 /* Difficulty.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				A261CFF024B942D3009A59D5 /* ContentView.swift in Sources */,
 				A261D00624B9449F009A59D5 /* Library.swift in Sources */,
 				A261D01724B9467E009A59D5 /* EmbeddedContactPickerViewController.swift in Sources */,
+				A261D04424BE1934009A59D5 /* Difficulty.swift in Sources */,
 				A261D02024B94758009A59D5 /* AssignBackupContactsView.swift in Sources */,
 				A261D01E24B94741009A59D5 /* AssignMainContactView.swift in Sources */,
 			);
