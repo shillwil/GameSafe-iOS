@@ -8,13 +8,16 @@
 
 import Foundation
 
-enum DifficultyLevel {
-    case easy
-    case medium
-    case hard
+enum DifficultyLevel: String {
+    
+    case easy = "Easy"
+    case medium = "Medium"
+    case hard = "Hard"
 }
 
-struct Difficulty {
+struct Difficulty: Identifiable, Hashable {
+    var id = UUID()
+    
     let level: DifficultyLevel
     var message: String
 }

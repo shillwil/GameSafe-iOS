@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A242CF0A24C7652A007AF08D /* EditDifficultyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */; };
+		A242CF0C24C7658B007AF08D /* MultilineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF0B24C7658B007AF08D /* MultilineTextView.swift */; };
 		A261CFEC24B942D3009A59D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261CFEB24B942D3009A59D5 /* AppDelegate.swift */; };
 		A261CFEE24B942D3009A59D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261CFED24B942D3009A59D5 /* SceneDelegate.swift */; };
 		A261CFF024B942D3009A59D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261CFEF24B942D3009A59D5 /* ContentView.swift */; };
@@ -35,6 +37,7 @@
 		A261D03C24B9490F009A59D5 /* GameSafe-iMessage-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04124B94ADE009A59D5 /* DecoyViewController.swift */; };
 		A261D04424BE1934009A59D5 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04324BE1934009A59D5 /* Difficulty.swift */; };
+		A261D04624BE21C1009A59D5 /* SetDifficultyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04524BE21C1009A59D5 /* SetDifficultyAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDifficultyMessage.swift; sourceTree = "<group>"; };
+		A242CF0B24C7658B007AF08D /* MultilineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextView.swift; sourceTree = "<group>"; };
 		A261CFE824B942D3009A59D5 /* GameSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A261CFEB24B942D3009A59D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A261CFED24B942D3009A59D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +98,7 @@
 		A261D03924B9490F009A59D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A261D04124B94ADE009A59D5 /* DecoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyViewController.swift; sourceTree = "<group>"; };
 		A261D04324BE1934009A59D5 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		A261D04524BE21C1009A59D5 /* SetDifficultyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDifficultyAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A261D00F24B945A5009A59D5 /* GameCell.swift */,
+				A242CF0B24C7658B007AF08D /* MultilineTextView.swift */,
 			);
 			path = SupportingViews;
 			sourceTree = "<group>";
@@ -228,6 +235,8 @@
 				A261D02424B947B4009A59D5 /* Settings.swift */,
 				A261D02724B947C8009A59D5 /* SettingsSubViews */,
 				A261D02324B9479B009A59D5 /* ContactViews */,
+				A261D04524BE21C1009A59D5 /* SetDifficultyAlertView.swift */,
+				A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -377,13 +386,16 @@
 				A261D00224B94360009A59D5 /* QuickStartButton.swift in Sources */,
 				A261D00424B94464009A59D5 /* MessagesComposeView.swift in Sources */,
 				A261CFEC24B942D3009A59D5 /* AppDelegate.swift in Sources */,
+				A242CF0C24C7658B007AF08D /* MultilineTextView.swift in Sources */,
 				A261D00A24B94512009A59D5 /* CircleImage.swift in Sources */,
 				A261D00E24B94551009A59D5 /* Home.swift in Sources */,
+				A261D04624BE21C1009A59D5 /* SetDifficultyAlertView.swift in Sources */,
 				A261D01524B9463C009A59D5 /* SettingsOptionRow.swift in Sources */,
 				A261D02524B947B4009A59D5 /* Settings.swift in Sources */,
 				A261D01B24B946BA009A59D5 /* Contact.swift in Sources */,
 				A261D01924B94698009A59D5 /* EmbeddedContactPicker.swift in Sources */,
 				A261D01024B945A5009A59D5 /* GameCell.swift in Sources */,
+				A242CF0A24C7652A007AF08D /* EditDifficultyMessage.swift in Sources */,
 				A261D00C24B94533009A59D5 /* CoverPhoto.swift in Sources */,
 				A261CFEE24B942D3009A59D5 /* SceneDelegate.swift in Sources */,
 				A261D02224B94772009A59D5 /* BackupContactRow.swift in Sources */,
