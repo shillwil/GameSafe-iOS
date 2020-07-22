@@ -13,7 +13,7 @@ struct SetDifficultyAlertView: View {
     @State var editMessagePressed = false
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), .white]), startPoint: .bottomLeading, endPoint: .topTrailing)
+        LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), .white]), startPoint: .bottomLeading, endPoint: .center)
             .edgesIgnoringSafeArea(.all)
             .overlay(
                 VStack {
