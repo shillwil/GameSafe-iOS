@@ -10,6 +10,11 @@ import SwiftUI
 
 struct Settings: View {
     @Binding var contacts: [Contact]
+    let defaultDifficulties = [
+        Difficulty(level: .easy, message: "Alex has activated their LOW level GameSafe alert and is requesting that you contact him immediately"),
+        Difficulty(level: .medium, message: "Alex has activated their MEDIUM level GameSafe Alert and has asked you to come to their location as soon as possible"),
+        Difficulty(level: .hard, message: "Alex has activated their HIGH level GameSafe Alert. Please contact the authorities immediately and send them to this location: ")
+    ]
     
     var body: some View {
         NavigationView {
@@ -36,9 +41,11 @@ struct Settings: View {
                         .frame(height: 50)
                         .padding(.horizontal)
                         
-                        SettingsOptionRow(setting: "Easy")
-                        SettingsOptionRow(setting: "Medium")
-                        SettingsOptionRow(setting: "Hard")
+                        ForEach(defaultDifficulties, id: \.self) { (difficulty) in
+                            NavigationLink(destination: SetDifficultyAlertView(difficulty: difficulty)) {
+                                SettingsOptionRow(setting: difficulty.level.rawValue)
+                            }
+                        }
                     }
                     .padding(.bottom, 30)
                     

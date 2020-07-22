@@ -14,23 +14,27 @@ struct ContentView: View {
     @State var contacts: [Contact] = []
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            
-            VStack {
-                if self.selected == 0 {
-                    Library()
-                } else if self.selected == 1 {
-                    Home()
-                } else {
-                    Settings(contacts: self.$contacts)
-                        .padding(.top, 50)
-                }
-            }
-//            .background(Color.white)
+        LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), .white]), startPoint: .bottomLeading, endPoint: .center)
             .edgesIgnoringSafeArea(.all)
-            
-            FloatingTabBar(selected: self.$selected)
-        }
+            .overlay(
+                ZStack(alignment: .bottom) {
+                    
+                    VStack {
+                        if self.selected == 0 {
+                            Library()
+                        } else if self.selected == 1 {
+                            Home()
+                        } else {
+                            Settings(contacts: self.$contacts)
+                                .padding(.top, 50)
+                        }
+                    }
+                        //            .background(Color.white)
+                        .edgesIgnoringSafeArea(.all)
+                    
+                    FloatingTabBar(selected: self.$selected)
+                }
+        )
     }
 }
 
