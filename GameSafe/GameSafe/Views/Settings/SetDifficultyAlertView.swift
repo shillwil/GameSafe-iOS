@@ -13,50 +13,55 @@ struct SetDifficultyAlertView: View {
     @State var editMessagePressed = false
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("For Difficulty Level")
-                    .font(.title)
-                
-                Spacer()
-                
-                Text(self.difficulty.level.rawValue)
-                    .font(.title)
-                    .bold()
-                    .italic()
-            }
-            .padding()
-            
-            VStack(alignment: .leading) {
-                Text("Current Message")
-                    .font(.title)
-                    .bold()
-                    .padding(.vertical)
-                
-                Text(difficulty.message)
-                    .font(.system(size: 20))
-                    .italic()
+        LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), .white]), startPoint: .bottomLeading, endPoint: .topTrailing)
+            .edgesIgnoringSafeArea(.all)
+            .overlay(
+                VStack {
+                    HStack {
+                        Text("For Difficulty Level")
+                            .font(.title)
+                        
+                        Spacer()
+                        
+                        Text(self.difficulty.level.rawValue)
+                            .font(.title)
+                            .bold()
+                            .italic()
+                    }
                     .padding()
-            }
-            .padding(.vertical)
-            
-            Button(action: {
-                self.editMessagePressed.toggle()
-            }) {
-                Text("Edit Message")
-                    .font(.system(size: 20, weight: .bold, design: .default))
-                    .foregroundColor(.white)
-                    .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height / 16)
-                    .background(Color(#colorLiteral(red: 0.1171975725, green: 0.7506059252, blue: 1, alpha: 1)))
-                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            }
-            
-            Spacer()
-        }
-        .navigationBarTitle("Difficulty")
-        .sheet(isPresented: self.$editMessagePressed) {
-            EditDifficultyMessage(difficulty: self.$difficulty, isPresented: self.$editMessagePressed, messagePlaceholder: self.difficulty.message)
-        }
+                    
+                    VStack(alignment: .leading) {
+                        Text("Current Message")
+                            .font(.title)
+                            .bold()
+                            .padding(.vertical)
+                        
+                        Text(difficulty.message)
+                            .font(.system(size: 20))
+                            .italic()
+                            .padding()
+                    }
+                    .padding(.vertical)
+                    
+                    Button(action: {
+                        self.editMessagePressed.toggle()
+                    }) {
+                        Text("Edit Message")
+                            .font(.system(size: 20, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                            .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height / 16)
+                            .background(Color(#colorLiteral(red: 0.1171975725, green: 0.7506059252, blue: 1, alpha: 1)))
+                            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                    
+                    Spacer()
+                }
+                .navigationBarTitle("Difficulty")
+                    //            .padding(.top, 80)
+                    .sheet(isPresented: self.$editMessagePressed) {
+                        EditDifficultyMessage(difficulty: self.$difficulty, isPresented: self.$editMessagePressed, messagePlaceholder: self.difficulty.message)
+                }
+        )
     }
 }
 

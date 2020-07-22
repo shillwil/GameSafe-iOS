@@ -48,7 +48,7 @@ struct Library: View {
             .padding(.top, UIScreen.main.bounds.height * 0.1)
         }
         .edgesIgnoringSafeArea(.all)
-        .background(Color.white)
+        .background(Color.clear)
         .sheet(isPresented: self.$quickStartTapped) {
             MessagesComposeView(quickStartTapped: self.$quickStartTapped, message: self.composeMessage(), difficulty: self.difficulty())
         }

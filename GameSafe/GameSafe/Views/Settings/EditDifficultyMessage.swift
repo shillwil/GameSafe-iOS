@@ -7,19 +7,16 @@
 //
 
 import SwiftUI
-
-enum DifficultyDefault: String {
-    case easy = " has activated their LOW level GameSafe alert and is requesting that you contact him immediately"
-}
+import TextView
 
 struct EditDifficultyMessage: View {
     @Binding var difficulty: Difficulty
     @Binding var isPresented: Bool
-    let messagePlaceholder: String
+    @State var messagePlaceholder: String?
     
     var body: some View {
         VStack {
-            MultilineTextView(text: self.$difficulty.message)
+            TextView(text: self.$difficulty.message, isEditing: self.$isPresented)
                 .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height / 3)
             
             Button(action: {
@@ -34,14 +31,40 @@ struct EditDifficultyMessage: View {
             }
             
             Button(action: {
-                self.difficulty.message = self.messagePlaceholder
+                self.difficulty.message = self.resetToDefault()
                 self.isPresented = false
             }) {
-                Text("Cancel")
+                Text("Reset to Default")
             }
             .padding(30)
             
+            Button(action: {
+                self.difficulty.message = self.messagePlaceholder ?? ""
+                self.isPresented = false
+            }) {
+                Text("Cancel")
+                    .foregroundColor(.red)
+            }
+            
             Spacer()
+        }
+        .onAppear {
+            self.setPlaceholder()
+        }
+    }
+    
+    func setPlaceholder() {
+        self.messagePlaceholder = self.difficulty.message
+    }
+    
+    func resetToDefault() -> String {
+        switch self.difficulty.level {
+        case .easy:
+            return "Alex has activated their LOW level GameSafe alert and is requesting that you contact him immediately"
+        case .medium:
+            return "Alex has activated their MEDIUM level GameSafe Alert and has asked you to come to their location as soon as possible"
+        case .hard:
+            return "Alex has activated their HIGH level GameSafe Alert. Please contact the authorities immediately and send them to this location: "
         }
     }
 }
