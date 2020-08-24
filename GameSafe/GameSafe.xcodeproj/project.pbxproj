@@ -622,6 +622,7 @@
 				DEVELOPMENT_TEAM = TX86F6EBCJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GameSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,6 +644,7 @@
 				DEVELOPMENT_TEAM = TX86F6EBCJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GameSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
