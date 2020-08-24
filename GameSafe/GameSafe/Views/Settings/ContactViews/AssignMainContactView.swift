@@ -39,8 +39,9 @@ struct AssignMainContactView: View {
                     .font(.system(size: 30, weight: .semibold, design: .default))
                     .foregroundColor(.white)
                     .frame(width: UIScreen.main.bounds.width / 1.1, height: 50)
-                    .background(Color(#colorLiteral(red: 0, green: 0.9803921569, blue: 0.5960784314, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.1171975725, green: 0.7506059252, blue: 1, alpha: 1)))
                     .clipShape(Capsule())
+					.padding()
             }
         }
         .sheet(isPresented: self.$contactListPresented, onDismiss: {

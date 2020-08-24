@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
     
@@ -36,6 +37,17 @@ struct ContentView: View {
                 }
         )
     }
+	
+	func fetchContacts() {
+		let contactFetchRequest: NSFetchRequest<GSAContact> = GSAContact.fetchRequest()
+		
+		do {
+			let fetchedContacts = try CoreDataStack.shared.mainContext.fetch(contactFetchRequest)
+			contacts = fetchedContacts
+		} catch {
+			NSLog("Error fetching contacts")
+		}
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
