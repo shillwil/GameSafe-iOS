@@ -12,7 +12,7 @@ struct AssignMainContactView: View {
     @Binding var contacts: [Contact]
     @State private var contactListPresented = false
     @State private var isMainContact = true
-    @State var favoriteContact: Contact?
+	@State var favoriteContact: Contact? 
     
     var body: some View {
         VStack(alignment: .center) {

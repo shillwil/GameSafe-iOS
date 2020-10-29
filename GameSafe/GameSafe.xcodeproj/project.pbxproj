@@ -8,14 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A22EB9CC24EF5155005B8CB7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22EB9CB24EF5155005B8CB7 /* Contact.swift */; };
-		A23872AF24EF3A1900B1C881 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872AE24EF3A1900B1C881 /* CoreDataStack.swift */; };
-		A23872B024EF3A1900B1C881 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872AE24EF3A1900B1C881 /* CoreDataStack.swift */; };
-		A23872B424EF3ABB00B1C881 /* ContactModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A23872B224EF3ABB00B1C881 /* ContactModel.xcdatamodeld */; };
-		A23872B524EF3ABB00B1C881 /* ContactModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A23872B224EF3ABB00B1C881 /* ContactModel.xcdatamodeld */; };
 		A23872BA24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */; };
 		A23872BB24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */; };
-		A23872BE24EF4E4B00B1C881 /* GSAContact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872BD24EF4E4B00B1C881 /* GSAContact+Convenience.swift */; };
-		A23872BF24EF4E4B00B1C881 /* GSAContact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872BD24EF4E4B00B1C881 /* GSAContact+Convenience.swift */; };
 		A242CF0A24C7652A007AF08D /* EditDifficultyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */; };
 		A242CF0C24C7658B007AF08D /* MultilineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF0B24C7658B007AF08D /* MultilineTextView.swift */; };
 		A242CF1324C7D827007AF08D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF1224C7D827007AF08D /* User.swift */; };
@@ -76,10 +70,7 @@
 
 /* Begin PBXFileReference section */
 		A22EB9CB24EF5155005B8CB7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		A23872AE24EF3A1900B1C881 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		A23872B324EF3ABB00B1C881 /* ContactModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactModel.xcdatamodel; sourceTree = "<group>"; };
 		A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+Convenience.swift"; sourceTree = "<group>"; };
-		A23872BD24EF4E4B00B1C881 /* GSAContact+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GSAContact+Convenience.swift"; sourceTree = "<group>"; };
 		A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDifficultyMessage.swift; sourceTree = "<group>"; };
 		A242CF0B24C7658B007AF08D /* MultilineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextView.swift; sourceTree = "<group>"; };
 		A242CF1224C7D827007AF08D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -135,16 +126,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A23872B124EF3A4900B1C881 /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				A23872AE24EF3A1900B1C881 /* CoreDataStack.swift */,
-				A23872B224EF3ABB00B1C881 /* ContactModel.xcdatamodeld */,
-				A23872BD24EF4E4B00B1C881 /* GSAContact+Convenience.swift */,
-			);
-			path = "Core Data";
-			sourceTree = "<group>";
-		};
 		A23872BC24EF4D1300B1C881 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +156,6 @@
 		A261CFEA24B942D3009A59D5 /* GameSafe */ = {
 			isa = PBXGroup;
 			children = (
-				A23872B124EF3A4900B1C881 /* Core Data */,
 				A261D01C24B946C5009A59D5 /* Models */,
 				A261D02824B947FD009A59D5 /* Views */,
 				A261CFEB24B942D3009A59D5 /* AppDelegate.swift */,
@@ -437,16 +417,13 @@
 				A261D01924B94698009A59D5 /* EmbeddedContactPicker.swift in Sources */,
 				A261D01024B945A5009A59D5 /* GameCell.swift in Sources */,
 				A242CF0A24C7652A007AF08D /* EditDifficultyMessage.swift in Sources */,
-				A23872BE24EF4E4B00B1C881 /* GSAContact+Convenience.swift in Sources */,
 				A23872BA24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */,
 				A261D00C24B94533009A59D5 /* CoverPhoto.swift in Sources */,
 				A261CFEE24B942D3009A59D5 /* SceneDelegate.swift in Sources */,
-				A23872AF24EF3A1900B1C881 /* CoreDataStack.swift in Sources */,
 				A261D02224B94772009A59D5 /* BackupContactRow.swift in Sources */,
 				A261CFF024B942D3009A59D5 /* ContentView.swift in Sources */,
 				A261D00624B9449F009A59D5 /* Library.swift in Sources */,
 				A261D01724B9467E009A59D5 /* EmbeddedContactPickerViewController.swift in Sources */,
-				A23872B424EF3ABB00B1C881 /* ContactModel.xcdatamodeld in Sources */,
 				A261D04424BE1934009A59D5 /* Difficulty.swift in Sources */,
 				A261D02024B94758009A59D5 /* AssignBackupContactsView.swift in Sources */,
 				A261D01E24B94741009A59D5 /* AssignMainContactView.swift in Sources */,
@@ -458,11 +435,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23872B024EF3A1900B1C881 /* CoreDataStack.swift in Sources */,
 				A261D03324B9490E009A59D5 /* MessagesViewController.swift in Sources */,
 				A23872BB24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */,
-				A23872B524EF3ABB00B1C881 /* ContactModel.xcdatamodeld in Sources */,
-				A23872BF24EF4E4B00B1C881 /* GSAContact+Convenience.swift in Sources */,
 				A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */,
 				A277A22224F47D7B00DA7DDF /* Contact.swift in Sources */,
 			);
@@ -738,19 +712,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCVersionGroup section */
-		A23872B224EF3ABB00B1C881 /* ContactModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A23872B324EF3ABB00B1C881 /* ContactModel.xcdatamodel */,
-			);
-			currentVersion = A23872B324EF3ABB00B1C881 /* ContactModel.xcdatamodel */;
-			path = ContactModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A261CFE024B942D3009A59D5 /* Project object */;
 }
