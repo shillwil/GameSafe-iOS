@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A22EB9CC24EF5155005B8CB7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22EB9CB24EF5155005B8CB7 /* Contact.swift */; };
-		A23872BA24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */; };
-		A23872BB24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */; };
 		A242CF0A24C7652A007AF08D /* EditDifficultyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */; };
 		A242CF0C24C7658B007AF08D /* MultilineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF0B24C7658B007AF08D /* MultilineTextView.swift */; };
 		A242CF1324C7D827007AF08D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242CF1224C7D827007AF08D /* User.swift */; };
@@ -41,7 +38,13 @@
 		A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04124B94ADE009A59D5 /* DecoyViewController.swift */; };
 		A261D04424BE1934009A59D5 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04324BE1934009A59D5 /* Difficulty.swift */; };
 		A261D04624BE21C1009A59D5 /* SetDifficultyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261D04524BE21C1009A59D5 /* SetDifficultyAlertView.swift */; };
-		A277A22224F47D7B00DA7DDF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22EB9CB24EF5155005B8CB7 /* Contact.swift */; };
+		A29AA5252568DAED005842F7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29AA5242568DAED005842F7 /* Contact.swift */; };
+		A29AA52C2568DBD1005842F7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A29AA52B2568DBD1005842F7 /* RealmSwift */; };
+		A29AA52E2568DBD1005842F7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A29AA52D2568DBD1005842F7 /* Realm */; };
+		A29AA5322568DBDC005842F7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A29AA5312568DBDC005842F7 /* Realm */; };
+		A29AA5342568DBDC005842F7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A29AA5332568DBDC005842F7 /* RealmSwift */; };
+		A29AA53A2568DD18005842F7 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29AA5392568DD18005842F7 /* ContactStore.swift */; };
+		A2AB92B8256861DF00319991 /* RealmContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB92B7256861DF00319991 /* RealmContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +72,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A22EB9CB24EF5155005B8CB7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+Convenience.swift"; sourceTree = "<group>"; };
 		A242CF0924C7652A007AF08D /* EditDifficultyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDifficultyMessage.swift; sourceTree = "<group>"; };
 		A242CF0B24C7658B007AF08D /* MultilineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextView.swift; sourceTree = "<group>"; };
 		A242CF1224C7D827007AF08D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -105,6 +106,11 @@
 		A261D04124B94ADE009A59D5 /* DecoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyViewController.swift; sourceTree = "<group>"; };
 		A261D04324BE1934009A59D5 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		A261D04524BE21C1009A59D5 /* SetDifficultyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDifficultyAlertView.swift; sourceTree = "<group>"; };
+		A29AA5242568DAED005842F7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		A29AA5392568DD18005842F7 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
+		A2AB92B7256861DF00319991 /* RealmContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmContact.swift; sourceTree = "<group>"; };
+		A2E1D9F02568D8FF006DB6B8 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../../../../Downloads/realm-swift-10.1.4/ios/swift-12.2/RealmSwift.framework"; sourceTree = "<group>"; };
+		A2E1D9F12568D8FF006DB6B8 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../../../../Downloads/realm-swift-10.1.4/ios/swift-12.2/Realm.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29AA52E2568DBD1005842F7 /* Realm in Frameworks */,
+				A29AA52C2568DBD1005842F7 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29AA5342568DBDC005842F7 /* RealmSwift in Frameworks */,
+				A29AA5322568DBDC005842F7 /* Realm in Frameworks */,
 				A261D03024B9490E009A59D5 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,14 +136,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A23872BC24EF4D1300B1C881 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A23872B924EF4D0900B1C881 /* Contact+Convenience.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		A261CFDF24B942D3009A59D5 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +167,7 @@
 				A261CFF624B942D3009A59D5 /* LaunchScreen.storyboard */,
 				A261CFF924B942D3009A59D5 /* Info.plist */,
 				A261CFF324B942D3009A59D5 /* Preview Content */,
+				A29AA5392568DD18005842F7 /* ContactStore.swift */,
 			);
 			path = GameSafe;
 			sourceTree = "<group>";
@@ -225,10 +228,10 @@
 		A261D01C24B946C5009A59D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A23872BC24EF4D1300B1C881 /* Extensions */,
 				A261D04324BE1934009A59D5 /* Difficulty.swift */,
 				A242CF1224C7D827007AF08D /* User.swift */,
-				A22EB9CB24EF5155005B8CB7 /* Contact.swift */,
+				A2AB92B7256861DF00319991 /* RealmContact.swift */,
+				A29AA5242568DAED005842F7 /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,6 +282,8 @@
 		A261D02E24B9490E009A59D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2E1D9F12568D8FF006DB6B8 /* Realm.framework */,
+				A2E1D9F02568D8FF006DB6B8 /* RealmSwift.framework */,
 				A261D02F24B9490E009A59D5 /* Messages.framework */,
 			);
 			name = Frameworks;
@@ -315,6 +320,8 @@
 			);
 			name = GameSafe;
 			packageProductDependencies = (
+				A29AA52B2568DBD1005842F7 /* RealmSwift */,
+				A29AA52D2568DBD1005842F7 /* Realm */,
 			);
 			productName = GameSafe;
 			productReference = A261CFE824B942D3009A59D5 /* GameSafe.app */;
@@ -333,6 +340,10 @@
 			dependencies = (
 			);
 			name = "GameSafe-iMessage-Extension";
+			packageProductDependencies = (
+				A29AA5312568DBDC005842F7 /* Realm */,
+				A29AA5332568DBDC005842F7 /* RealmSwift */,
+			);
 			productName = "GameSafe-iMessage-Extension";
 			productReference = A261D02D24B9490E009A59D5 /* GameSafe-iMessage-Extension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
@@ -366,6 +377,7 @@
 			mainGroup = A261CFDF24B942D3009A59D5;
 			packageReferences = (
 				A242CF0D24C7A015007AF08D /* XCRemoteSwiftPackageReference "TextView" */,
+				A29AA52A2568DBD1005842F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = A261CFE924B942D3009A59D5 /* Products */;
 			projectDirPath = "";
@@ -404,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22EB9CC24EF5155005B8CB7 /* Contact.swift in Sources */,
 				A261D00224B94360009A59D5 /* QuickStartButton.swift in Sources */,
 				A261D00424B94464009A59D5 /* MessagesComposeView.swift in Sources */,
 				A261CFEC24B942D3009A59D5 /* AppDelegate.swift in Sources */,
@@ -414,15 +425,17 @@
 				A261D04624BE21C1009A59D5 /* SetDifficultyAlertView.swift in Sources */,
 				A261D01524B9463C009A59D5 /* SettingsOptionRow.swift in Sources */,
 				A261D02524B947B4009A59D5 /* Settings.swift in Sources */,
+				A2AB92B8256861DF00319991 /* RealmContact.swift in Sources */,
 				A261D01924B94698009A59D5 /* EmbeddedContactPicker.swift in Sources */,
 				A261D01024B945A5009A59D5 /* GameCell.swift in Sources */,
+				A29AA5252568DAED005842F7 /* Contact.swift in Sources */,
 				A242CF0A24C7652A007AF08D /* EditDifficultyMessage.swift in Sources */,
-				A23872BA24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */,
 				A261D00C24B94533009A59D5 /* CoverPhoto.swift in Sources */,
 				A261CFEE24B942D3009A59D5 /* SceneDelegate.swift in Sources */,
 				A261D02224B94772009A59D5 /* BackupContactRow.swift in Sources */,
 				A261CFF024B942D3009A59D5 /* ContentView.swift in Sources */,
 				A261D00624B9449F009A59D5 /* Library.swift in Sources */,
+				A29AA53A2568DD18005842F7 /* ContactStore.swift in Sources */,
 				A261D01724B9467E009A59D5 /* EmbeddedContactPickerViewController.swift in Sources */,
 				A261D04424BE1934009A59D5 /* Difficulty.swift in Sources */,
 				A261D02024B94758009A59D5 /* AssignBackupContactsView.swift in Sources */,
@@ -436,9 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A261D03324B9490E009A59D5 /* MessagesViewController.swift in Sources */,
-				A23872BB24EF4D0900B1C881 /* Contact+Convenience.swift in Sources */,
 				A261D04224B94ADE009A59D5 /* DecoyViewController.swift in Sources */,
-				A277A22224F47D7B00DA7DDF /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,7 +722,38 @@
 				kind = branch;
 			};
 		};
+		A29AA52A2568DBD1005842F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A29AA52B2568DBD1005842F7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29AA52A2568DBD1005842F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		A29AA52D2568DBD1005842F7 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29AA52A2568DBD1005842F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		A29AA5312568DBDC005842F7 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29AA52A2568DBD1005842F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		A29AA5332568DBDC005842F7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29AA52A2568DBD1005842F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A261CFE024B942D3009A59D5 /* Project object */;
 }
