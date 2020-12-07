@@ -7,11 +7,11 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
-    
+	@EnvironmentObject var contactStore: ContactStore
     @State var selected = 0
-    @State var contacts: [Contact] = []
     
     var body: some View {
         LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), .white]), startPoint: .bottomLeading, endPoint: .center)
@@ -25,7 +25,7 @@ struct ContentView: View {
                         } else if self.selected == 1 {
                             Home()
                         } else {
-                            Settings(contacts: self.$contacts)
+							Settings(contacts: contactStore.contacts)
                                 .padding(.top, 50)
                         }
                     }

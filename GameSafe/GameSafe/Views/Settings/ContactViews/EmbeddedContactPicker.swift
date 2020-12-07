@@ -12,7 +12,7 @@ import Combine
 
 struct EmbeddedContactPicker: UIViewControllerRepresentable {
     typealias UIViewControllerType = EmbeddedContactPickerViewController
-    @Binding var contacts: [Contact]
+	@EnvironmentObject var contactStore: ContactStore
     @Binding var isMainContact: Bool
     @Binding var isPresented: Bool
 
@@ -38,7 +38,7 @@ struct EmbeddedContactPicker: UIViewControllerRepresentable {
         }
         
         func embeddedContactPickerViewController(_ viewController: EmbeddedContactPickerViewController, didSelect contact: CNContact) {
-            self.parent.contacts.append(Contact(name: contact.givenName, phoneNumber: contact.phoneNumbers.first?.value.stringValue ?? "", isMainContact: self.parent.isMainContact))
+			parent.contactStore.create(name: contact.givenName, phoneNumber: contact.phoneNumbers.first?.value.stringValue ?? "", isMainContact: self.parent.isMainContact)
             self.parent.isPresented = false
         }
 

@@ -30,6 +30,6 @@ struct BackupContactRow: View {
 
 struct BackupContactRow_Previews: PreviewProvider {
     static var previews: some View {
-        BackupContactRow(contact: Contact(name: "Name", phoneNumber: "8015550123", isMainContact: false))
+		BackupContactRow(contact: Contact(id: 0, name: "Name", phoneNumber: "8015550123", isMainContact: false))
     }
 }

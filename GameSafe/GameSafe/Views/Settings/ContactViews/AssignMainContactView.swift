@@ -9,10 +9,14 @@
 import SwiftUI
 
 struct AssignMainContactView: View {
-    @Binding var contacts: [Contact]
+	@EnvironmentObject var contactStore: ContactStore
     @State private var contactListPresented = false
     @State private var isMainContact = true
-    @State var favoriteContact: Contact?
+	
+	private var mainContact: Contact? {
+		guard let contact = contactStore.contacts.first(where: { $0.isMainContact == true }) else { return nil }
+		return contact
+	}
     
     var body: some View {
         VStack(alignment: .center) {
@@ -23,11 +27,11 @@ struct AssignMainContactView: View {
             }
             .padding()
             
-            Text(self.favoriteContact?.name ?? "No Main Contact Assigned") // Contact given name
+			Text(mainContact?.name ?? "No Main Contact Assigned") // Contact given name
                 .font(.headline).bold()
                 .padding()
             
-            Text(self.favoriteContact?.phoneNumber ?? "No phone number found") // Contact phone number
+			Text(mainContact?.phoneNumber ?? "No phone number found") // Contact phone number
                 .padding(.bottom, UIScreen.main.bounds.height / 4)
             
             Spacer()
@@ -39,32 +43,20 @@ struct AssignMainContactView: View {
                     .font(.system(size: 30, weight: .semibold, design: .default))
                     .foregroundColor(.white)
                     .frame(width: UIScreen.main.bounds.width / 1.1, height: 50)
-                    .background(Color(#colorLiteral(red: 0, green: 0.9803921569, blue: 0.5960784314, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.1171975725, green: 0.7506059252, blue: 1, alpha: 1)))
                     .clipShape(Capsule())
+					.padding()
             }
         }
-        .sheet(isPresented: self.$contactListPresented, onDismiss: {
-            self.favoriteContactAssigner()
-        }, content: {
-            EmbeddedContactPicker(contacts: self.$contacts, isMainContact: self.$isMainContact, isPresented: self.$contactListPresented)
-        })
-        .onAppear {
-            self.favoriteContactAssigner()
-        }
-    }
-    
-    func favoriteContactAssigner() {
-        for contact in contacts {
-            if contact.isMainContact {
-                self.favoriteContact = contact
-            }
-        }
+		.sheet(isPresented: self.$contactListPresented, content: {
+			EmbeddedContactPicker(isMainContact: $isMainContact, isPresented: $contactListPresented)
+		})
     }
 }
 
 struct AssignMainContactView_Previews: PreviewProvider {
     static var previews: some View {
-        AssignMainContactView(contacts: .constant([]))
+        AssignMainContactView()
     }
 }
 

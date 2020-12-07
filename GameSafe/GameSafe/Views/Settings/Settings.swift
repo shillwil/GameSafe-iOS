@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct Settings: View {
-    @Binding var contacts: [Contact]
+    var contacts: [Contact]
     let defaultDifficulties = [
         Difficulty(level: .easy, message: "Alex has activated their LOW level GameSafe alert and is requesting that you contact him immediately"),
         Difficulty(level: .medium, message: "Alex has activated their MEDIUM level GameSafe Alert and has asked you to come to their location as soon as possible"),
@@ -21,11 +21,11 @@ struct Settings: View {
             ZStack {
                 ScrollView {
                     VStack(spacing: 1) {
-                        NavigationLink(destination: AssignMainContactView(contacts: self.$contacts)) {
+                        NavigationLink(destination: AssignMainContactView()) {
                             SettingsOptionRow(setting: "Main Contact")
                         }
                         
-                        NavigationLink(destination: AssignBackupContactsView(contacts: self.$contacts)) {
+                        NavigationLink(destination: AssignBackupContactsView()) {
                             SettingsOptionRow(setting: "Backup Contact")
                         }
                     }
@@ -72,6 +72,6 @@ struct Settings: View {
 
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        Settings(contacts: .constant([]))
+		Settings(contacts: [])
     }
 }

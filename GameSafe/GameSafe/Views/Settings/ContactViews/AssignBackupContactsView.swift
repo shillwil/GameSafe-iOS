@@ -9,10 +9,14 @@
 import SwiftUI
 
 struct AssignBackupContactsView: View {
-    @Binding var contacts: [Contact]
+	@EnvironmentObject var contactStore: ContactStore
     @State private var contactListPresented = false
     @State private var isMainContact = false
-    @State var backupContact: Contact?
+	var backupContact: Contact? {
+		let contact = contactStore.contacts.first(where: { $0.isMainContact == false })
+		
+		return contact
+	}
     
     var body: some View {
         VStack {
@@ -45,27 +49,14 @@ struct AssignBackupContactsView: View {
             
             Spacer()
         }
-        .sheet(isPresented: self.$contactListPresented, onDismiss: {
-            self.backupContactAssigner()
-        }, content: {
-            EmbeddedContactPicker(contacts: self.$contacts, isMainContact: self.$isMainContact, isPresented: self.$contactListPresented)
+        .sheet(isPresented: self.$contactListPresented, content: {
+			EmbeddedContactPicker(isMainContact: $isMainContact, isPresented: $contactListPresented)
         })
-            .onAppear {
-                self.backupContactAssigner()
-        }
-    }
-    
-    func backupContactAssigner() {
-        for contact in contacts {
-            if !contact.isMainContact {
-                self.backupContact = contact
-            }
-        }
     }
 }
 
 struct AssignBackupContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        AssignBackupContactsView(contacts: .constant([]))
+        AssignBackupContactsView()
     }
 }

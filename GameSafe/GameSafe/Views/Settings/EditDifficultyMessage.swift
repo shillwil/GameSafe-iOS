@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import TextView
 
 struct EditDifficultyMessage: View {
     @Binding var difficulty: Difficulty
@@ -16,8 +15,12 @@ struct EditDifficultyMessage: View {
     
     var body: some View {
         VStack {
-            TextView(text: self.$difficulty.message, isEditing: self.$isPresented)
-                .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height / 3)
+//            TextView(text: self.$difficulty.message, isEditing: self.$isPresented)
+//                .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height / 3)
+			TextEditor(text: self.$difficulty.message)
+				.padding(.horizontal)
+				.frame(height: UIScreen.main.bounds.height / 3)
+				.disabled(isPresented)
             
             Button(action: {
                 self.isPresented = false
